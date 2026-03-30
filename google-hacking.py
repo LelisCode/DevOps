@@ -19,8 +19,8 @@ elif escolha == "inurl":
     i =input(" Digite o termo a ser encontrado na URL:")
     i2 =input(" Digite o site 1:")
     i3 =input(" Digite o site 2:")
-   
-    dork = f"(site:{i2} | site:{i3}) | inurl:{i}  "
+    t =input("Digite um titulo para página")
+    dork = f"(site:{i2} | site:{i3}) | inurl:{i} | intitle: {t} "
 
 elif escolha == "ext":
     
