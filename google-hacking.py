@@ -11,14 +11,14 @@ if escolha == "site":
     dork = f"site:{site} | intitle:{title} | intext:{text}"
 
 elif escolha == "intitle":
-    t=input("Digite o título:")
+    t   =input("Digite o título:")
     text1    =input("Digite um texto que esteja dentro do site:")
     dork = f"intitle:{t} intext:{text1}"
  
 elif escolha == "inurl":
-    i =input(" Digite o termo a ser encontrado na URL")
-    i2 =input(" Digite o site 1")
-    i3 =input(" Digite o site 2")
+    i =input(" Digite o termo a ser encontrado na URL:")
+    i2 =input(" Digite o site 1:")
+    i3 =input(" Digite o site 2:")
    
     dork = f"(site:{i2} | site:{i3}) | inurl:{i}  "
 
