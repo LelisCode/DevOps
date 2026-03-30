@@ -1,6 +1,6 @@
 import webbrowser
 
-opçoes=input("site, intitle, inurl, ext, link ou inanchor, alguns contem boas combinações para uma busca completa")
+opçoes=input("site, intitle, inurl, ext, link ou inanchor, alguns contêm boas combinações para uma busca completa")
 escolha=input("Qual google hacking que usar hoje?")
 
 
@@ -8,7 +8,8 @@ if escolha == "site":
     domino = input("Digite o domíno:")
     palavra =input("Digite um título pra página (ex:login):")
     text    =input("Digite um texto que esteja dentro do site")
-    dork = f"site:{domino} | intitle:{palavra} | intext:{text}"
+    url     =input("Digite um texto para achar na URL")
+    dork = f"site:{domino} | inurl:{url} | intitle:{palavra} | intext:{text}"
 
 elif escolha == "intitle":
     t=input("Digite o título")
@@ -25,9 +26,10 @@ elif escolha == "inurl":
 
 elif escolha == "ext":
     
-    dominio = input("Digite o domínio:")                                                                 
+    dominio = input("Digite o domínio 1 :")   
+    dominio2 = input("Digite o domínio 2 :")
     e= input("Digite o arquivo a se localizar,exemplo:pdf,.py,.txt") 
-    dork = f"site:{dominio} | ext:{e}"
+    dork = f"site:{dominio} | site:{dominio2} ext:{e}"
     
 
 
